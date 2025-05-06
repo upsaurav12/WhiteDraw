@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #7209b7;
+  --accent-color: #f72585;
+  --success-color: #2cb67d;
+  --warning-color: #ff9e00;
+  --error-color: #ef4565;
+  --background-color: #f8f9fa;
+  --text-primary: #2b2c34;
+  --text-secondary: #6c757d;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background-color: var(--background-color);
+}
+
+.toolbar-btn {
+  @apply p-1.5 rounded-md text-gray-700 hover:bg-gray-100 transition-colors;
+}
+
+.excalidraw .App-menu_top .buttonList {
+  display: none !important;
+}
+
+.excalidraw .App-menu_bottom {
+  display: none !important;
+}
+
+.excalidraw .App-toolbar-container {
+  display: none !important;
+}
+
+.excalidraw .layer-ui__wrapper {
+  pointer-events: none !important;
+}
+
+.excalidraw .layer-ui__wrapper .HintViewer {
+  display: none !important;
+}
+
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-center {
+  display: none !important;
+}
+
+/* Show only the cursor-controls portion of the layer UI */
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right {
+  pointer-events: auto !important;
+}
